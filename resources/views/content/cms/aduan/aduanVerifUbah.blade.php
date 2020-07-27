@@ -23,7 +23,7 @@
 					<h3 class="box-title">Form Aduan Terverifikasi #{{$issue->issue_id}}</h3>
 				</div>
 				<div class="box-body">
-					<form action="{{url('cms/aduan/verif/ubah').'/'.$issue->issue_id}}" method="post">
+					<form action="{{url('cms/aduan/verif/ubah').'/'.$issue->issue_id}}" method="post" enctype="multipart/form-data">
 						@csrf
 						<div class="form-group">
 							<label>Judul Aduan</label>
@@ -84,9 +84,9 @@
 							@enderror
 						</div>
 						<div class="form-group">
-							<label for="document_issue">Dokumen Aduan <small style="color: red"></small></label>
-							<input type="file" name="document_issue" id="document_issue">
-							@error('document_issue')
+							<label for="document_verif">Dokumen Verifikasi <small style="color: red"></small></label>
+							<input type="file" name="document_verif" id="document_verif">
+							@error('document_verif')
 							<span class="invalid-feedback" role="alert">
 								<strong>{{ $message }}</strong>
 							</span>

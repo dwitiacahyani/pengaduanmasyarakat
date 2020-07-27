@@ -12,7 +12,7 @@
                     <div class="tm-banner-header">
                         <h1 class="text-uppercase tm-banner-title">Tata Cara Pengaduan kamu sekarang!</h1>
                         <img src="{{url('img')}}/dots-3.png" alt="Dots">
-                        <p class="tm-banner-subtitle">1. masyarakat login sebelum Pengaduan tentang jalan rusak/berlubang jika belum memiliki akun harap daftar akun terlebih dahulu
+                        <p class="tm-banner-subtitle">1. masyarakat login sebelum Pengaduan tentang jalan rusak/berlubang jika belum memiliki akun harap daftar akun terlebih dahulu<br>
                         2. kemudian pilih menu informasi Pengaduan Anda</p>
                         <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
                     </div>    

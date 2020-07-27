@@ -23,7 +23,7 @@
 					<h3 class="box-title">Form Aduan Belum Verifikasi #{{$issue->issue_id}}</h3>
 				</div>
 				<div class="box-body">
-					<form action="{{url('cms/aduan/nonverif/ubah').'/'.$issue->issue_id}}" method="post">
+					<form action="{{url('cms/aduan/nonverif/ubah').'/'.$issue->issue_id}}" method="post" enctype="multipart/form-data">
 						@csrf
 						<div class="form-group">
 							<label>Judul Aduan</label>

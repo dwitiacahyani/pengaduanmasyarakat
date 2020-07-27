@@ -53,6 +53,14 @@
 									<textarea rows="8" name="response_issue" disabled id="jawaban" class="form-control">{{$issue->response_issue}}</textarea>
 								</div>
 								<div class="form-group">
+									<label>Dokumen Verif</label>
+									@if(!empty($issue->document_verif))
+									<a style="display: block" download href="{{url('uploads/aduan/')}}/{{$issue->document_verif}}" class="btn-link">download file</a>
+									@else
+									<p>Data document tidak ada</p>
+									@endif
+								</div>
+								<div class="form-group">
 									<label for="status">Status</label>
 									<select class="form-control" name="status" id="status" disabled>
 										<option value="">-Pilih Status-</option>
